@@ -192,6 +192,9 @@
 
 
   @media screen and (max-width: 768px) {
+    #home {
+      padding-top: 80px;
+    }
     .menu-ul-mobile{
         display:  block;
      }
