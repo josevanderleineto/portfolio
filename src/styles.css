@@ -126,13 +126,14 @@
 }
 
 #home {
-    font-size: larger;
-    font-weight: bold;
+   padding-top: 100px;
 }
 
 #home p {
     padding-bottom: 10vw;
     color: var(--words);
+    font-size: larger;
+    font-weight: bold;
 }
 
 #profile  {
