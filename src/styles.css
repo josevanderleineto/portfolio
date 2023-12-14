@@ -364,6 +364,14 @@
   padding-right: 20px; /* Adicione o padding desejado à direita */
 }
 
+#skills .box-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center; /* Centralizar as caixas horizontalmente */
+}
+
+
 #skills h2 {
     text-align: center;
     padding: 40px;
@@ -386,10 +394,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centralizar o conteúdo vertical e horizontalmente */
+    justify-content: center;
     margin: 10px;
     text-align: center;
-    background-color: #f0f0f0; /* Cor de fundo cinza (substitua pela cor desejada) */
+    background-color: #f0f0f0;
+}
+
+@media (min-width: 768px) {
+    #skills .box-skill {
+        width: calc(25% - 20px); /* 20% width com 20px de margem entre as caixas */
+    }
+}
+
+
+
+  .box-skill img {
+    padding-top: 20px;
+    width: 40px;
   }
 
   #skills .box-skill p {
