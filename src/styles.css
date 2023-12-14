@@ -334,7 +334,7 @@
   
 
   #about {
-    padding-top: 100px;
+    padding-top: 170px;
     background: var(--bg);
     height: 100vh;
 }
@@ -353,13 +353,13 @@
 
 
 #skills {
+
   background: var(--bg);
   height: 100vh; /* 100% da altura da tela */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 300px;
   padding-left: 20px; /* Adicione o padding desejado à esquerda */
   padding-right: 20px; /* Adicione o padding desejado à direita */
 }
@@ -373,11 +373,10 @@
 
 
 #skills h2 {
-    text-align: center;
-    padding: 40px;
-    color: var(--words);
+  padding: 20px;
+  margin-top: 0;
+  color: var(--words);
 }
-
 
 
 
@@ -389,7 +388,7 @@
   }
   
   #skills .box-skill {
-    width: 120px;
+    width: 100px;
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -421,6 +420,10 @@
   #skills .box-skill:hover {
     width: 150px;
     height: 150px;
+  }
+
+  #projects {
+    background: var(--bg);
   }
 
 
