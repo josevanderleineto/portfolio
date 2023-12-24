@@ -142,28 +142,18 @@
     border-radius: 50%;
 }
 
-#button {
-  text-align: center;
-}
-
-.cv{
-  width: 200px;
-  height: 30px;
-  border-radius: 50px;
-  background-color: var(--blue);
-}
-
-.cv a{
-  color: var(--words);
-  font-size: 15pt;
-  font-weight: 700;
+.cv {
   text-decoration: none;
+  border: none;
+  background: #0b3374;
+  text-align: center;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
 }
-.cv:hover {
-  font-size: x-large;
-  width: 230;
-  height: 40px;
-}
+
+
+
 
 .scroll-down {
   padding-top: 20px;

@@ -1,0 +1,10 @@
+
+  
+  .social-icons a {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  .social-icons a > img {
+    padding-top: 40px;
+    width: 20px;
+  }

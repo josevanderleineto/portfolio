@@ -6,6 +6,7 @@ import '../Projects/Projects.css';
 const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
   return (
     <div className="col-md-4 mb-4">
+  
       <div className="card text-center project-card">
         <img src={imgSrc} className="card-img-top" alt={title} />
         <div className="card-body">
@@ -28,7 +29,7 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
 const Projects = () => {
   return (
     <div id="projects" className="d-flex flex-column min-height-100vh">
-      <h2>Projects</h2>
+      <h2 className='text-center text-white'>Projects</h2>
       <div className="container flex-grow-1 mt-5">
         <div className="row justify-content-center">
           <div className="col-md-12 text-center">{/* Conteúdo opcional para a parte superior da sua página */}</div>
