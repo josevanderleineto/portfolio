@@ -7,39 +7,39 @@ const Skills: React.FC = () => {
     <h2>Skills</h2>
         <div className="box-container">
         <div className="box-skill">
-            <img src={html} />
+            <img src={html} alt=""/>
             <p>HTML5</p>
          </div>
          <div className="box-skill">
-            <img src={html} />
+            <img src={html} alt=""/>
             <p>HTML5</p>
          </div>
          <div className="box-skill">
-            <img src={html} />
+            <img src={html} alt=""/>
             <p>HTML5</p>
          </div>
          <div className="box-skill">
-            <img src={html} />
+            <img src={html} alt=""/>
             <p>HTML5</p>
          </div>
          <div className="box-skill">
-            <img src={html} />
+            <img src={html} alt=""/>
             <p>HTML5</p>
          </div>
          <div className="box-skill">
-            <img src={html} />
+            <img src={html} alt=""/>
             <p>HTML5</p>
          </div>
          <div className="box-skill">
-            <img src={html} />
+            <img src={html} alt=""/>
             <p>HTML5</p>
          </div>
          <div className="box-skill">
-            <img src={html} />
+            <img src={html} alt=""/>
             <p>HTML5</p>
          </div>
          <div className="box-skill">
-            <img src={html} />
+            <img src={html} alt=""/>
             <p>HTML5</p>
          </div>
          

@@ -324,19 +324,19 @@
   
 
   #about {
-    padding-top: 170px;
+    padding-top: 50px;
     background: var(--bg);
     height: 100vh;
 }
 #about h2 {
     color: var(--words);
     text-align: center;
-    padding: 40px;
+    padding: 40px
 }
 
-#about p {
-    padding-right:  25vw;
-    padding-left: 25vw;
+ .text{
+    padding-right:  15vw;
+    padding-left: 15vw;
     color: var(--words);
 
 }
@@ -416,170 +416,6 @@
     background: var(--bg);
   }
 
-
-
-#contacts {
-  height: 100vh;
-  background: var(--BG);
-  padding-top: 70px;
-}
-
-#form {
-    padding: 20px;
-    width: 500px;
-    margin: 0 auto;
-    background: var(--blue);
-  }
-  
-  form {
-    border: none;
-    padding: 20px;
-  }
-  
-  h2 {
-    text-align: center;
-    color: var(--words);
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-    color: var(--words);
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  input[type="submit"] {
-    background-color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  input:focus, textarea:focus {
-    outline: none;
-    border-color: #000;
-  }
-  
-  textarea {
-    height: 100px;
-  }
-
-
-.redes {
-  text-align: center;
-  padding: 20px;
-}
-.redes i {
-  font-size: 20pt;
-  padding: 5px;
-  color: #000;
-}
-
-  @media (max-width: 500px) {
-    #contacts h2 {
-        text-align: center;
-    }
-    #contacts {
-      width: 100%;
-      margin: 0;
-    }
-
-    #form {
-      width: 100%;
-    }
-  
-    
-    h2 {
-      text-align: left;
-    }
-  
-    label {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 5px;
-    }
-  
-    input, textarea {
-      width: 100%;
-      padding: 5px;
-      border-radius: 0;
-    }
-  
-    input[type="submit"] {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  }
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .skills-and-projects {
   background: var(--BG);
 }
@@ -594,11 +430,14 @@ background: var(--blue);
 }
 
 footer {
+  padding-top: 10px;
   background: var(--blue);
 }
 footer p {
-  padding-top: 3rem;
   text-align: center;
   color: var(--words);
 }
 
+.Footer  {
+  padding-bottom: 10px;
+}
