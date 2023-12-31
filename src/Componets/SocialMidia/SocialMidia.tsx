@@ -1,8 +1,7 @@
 import React from "react";
-import dev from "../../assets/img/dev.svg";
 import github from  "../../assets/img/github.svg";
 import linkedin from "../../assets/img/linkedin.svg";
-import bihance from "../../assets/img/bihance.svg";
+import bihance from "../../assets/img/behance.png";
 import instagram from "../../assets/img/instagram.svg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../SocialMidia/SocialMidia.css';
@@ -10,11 +9,10 @@ const SocialMidia: React.FC = () => {
     return (
         <div className="social-midia text-center">
             <div className="social-icons">
-                <a href="" ><img src={linkedin} alt="" /></a>
-                <a href=""><img src={github} alt="" /></a>
-                <a href=""><img src={dev} alt="" /></a>
-                <a href=""><img src={bihance} alt="" /></a>
-                <a href=""><img src={instagram} alt="" /></a>
+                <a href="https://www.linkedin.com/in/vanderleineto/"  target="blank"><img src={linkedin} alt="Linkedin" /></a>
+                <a href="https://github.com/josevanderleineto" target="blank"><img src={github} alt="Github" /></a>
+                <a href="https://www.behance.net/josvanderlei1" target="blank"><img src={bihance} alt="Bihance" /></a>
+                <a href="https://www.instagram.com/josevanderleineto/" target="blank"><img src={instagram} alt="Instagram" /></a>
             </div>
         </div>
 

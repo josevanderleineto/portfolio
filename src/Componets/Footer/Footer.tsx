@@ -8,11 +8,15 @@ const Footer: React.FC = () => {
     return (
         <div className="text-center">
             <div className="Footer">
-            <p >By Vanderlei Neto</p>
-            <a href="mailto:jvn.neto@protonmail.com" className="email">
+            <SocialMidia />
+            <a href="mailto:jvn.neto@protonmail.com" className="email text-light text-decoration-none
+
+">
                 jvn.neto@protonmail.com
             </a>
-            <SocialMidia />
+
+            <p >&copy; By Vanderlei Neto</p>
+
             </div>
         </div>
     );
