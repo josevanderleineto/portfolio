@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Projects/Projects.css';
+import tabela from '../../assets/img/tabela-cutter.svg';
+import embreve from '../../assets/img/Embreve.svg';
 
 // Componente de Projeto Reutilizável
 const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
@@ -38,7 +40,7 @@ const Projects = () => {
         <div className="row justify-content-center">
           {/* Projeto 1 */}
           <ProjectCard
-            imgSrc="https://placehold.it/300x200"
+            imgSrc={tabela}
             title="Projeto 1"
             description="Descrição do Projeto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             siteLink="https://projeto1.com"
@@ -47,7 +49,7 @@ const Projects = () => {
 
           {/* Projeto 2 */}
           <ProjectCard
-            imgSrc="https://placehold.it/300x200"
+            imgSrc={embreve}
             title="Projeto 2"
             description="Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             siteLink="https://projeto2.com"
@@ -56,11 +58,11 @@ const Projects = () => {
 
           {/* Projeto 3 */}
           <ProjectCard
-            imgSrc="https://placehold.it/300x200"
+            imgSrc={embreve}
             title="Projeto 3"
             description="Descrição do Projeto 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            siteLink="https://projeto3.com"
-            githubLink="https://github.com/projeto3"
+            siteLink="https://www.tabelacutter.online/"
+            githubLink="https://github.com/josevanderleineto/tebela-cutter"
           />
 
           {/* Adicione mais cartões de projeto conforme necessário */}
