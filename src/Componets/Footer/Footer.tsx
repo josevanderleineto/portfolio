@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles.css"
 import SocialMidia from "../SocialMidia/SocialMidia";
+import "../Footer/Footer.css"
 
 const Footer: React.FC = () => {
     
@@ -9,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="text-center">
             <div className="Footer">
             <SocialMidia />
-            <a href="mailto:jvn.neto@protonmail.com" className="email text-light text-decoration-none
+            <a href="mailto:jvn.neto@protonmail.com" className="email
 
 ">
                 jvn.neto@protonmail.com

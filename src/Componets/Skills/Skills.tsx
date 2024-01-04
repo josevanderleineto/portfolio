@@ -10,9 +10,13 @@ import taiwindcss from '../../assets/img/tailwind-css.svg';
 import angular from '../../assets/img/angularjs-original.svg';
 import vue from '../../assets/img/vue.svg';
 import figma from '../../assets/img/figma.svg'
+import Menu from "../Menu/Menu";
+import '../../styles.css';
+import Footer from "../Footer/Footer";
 const Skills: React.FC = () => {
     return (
         <div>
+         <Menu />
         <section id="skills">
     <h2>Skills</h2>
         <div className="box-container">
@@ -63,6 +67,8 @@ const Skills: React.FC = () => {
          </div>
         </div>
     </section>
+    <Footer />
+
         </div>
     )
 }
