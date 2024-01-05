@@ -5,9 +5,8 @@
     align-items: stretch;
   }
   
-  .projects h2 {
-    padding-top: 100px;
-  }
+  
+  
   .project-card {
     display: flex;
     flex-direction: column;
@@ -24,6 +23,21 @@
 
   .card-text {
     font-size: 8pt;
+  }
+  
+  /* ... Seus estilos existentes ... */
+
+#projects h2 {
+    margin-top: 40px; /* Ajuste conforme necessário para afastar o h2 do topo */
+    margin-bottom: -100px; /* Ajuste conforme necessário para aumentar o espaço entre o h2 e os cards */
+  }
+  
+  /* Adicione media queries para dispositivos móveis */
+  @media (max-width: 576px) {
+    #projects h2 {
+      margin-top: 10px; /* Ajuste conforme necessário para afastar o h2 do topo em dispositivos móveis */
+      margin-bottom: 5px; /* Ajuste conforme necessário para aumentar o espaço entre o h2 e os cards em dispositivos móveis */
+    }
   }
   
  

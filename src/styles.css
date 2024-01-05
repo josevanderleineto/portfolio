@@ -216,6 +216,9 @@
 }
 
 @media (min-width: 768px) {
+   .skills {
+    background: chartreuse;
+   }
     #skills .box-skill {
         width: calc(21% - 19px); /* 20% width com 20px de margem entre as caixas */
     }
@@ -258,11 +261,10 @@ background: var(--blue);
 
 @media screen and (max-width: 768px) {
   #about {
-    height: 100%;
+    height: 85rem;
   }
   #skills{
     height: 100%;
-   padding-top: 70px;
   }
 
   #skiils .box-skill {

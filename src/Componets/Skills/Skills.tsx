@@ -68,8 +68,8 @@ const Skills: React.FC = () => {
         </div>
     </section>
     <Footer />
-
         </div>
+        
     )
 }
 
