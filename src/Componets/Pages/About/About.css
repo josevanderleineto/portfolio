@@ -1,0 +1,18 @@
+
+#about {
+    height: 100vh;
+    background: var(--bg);
+    padding: 40px;
+}
+#about h2 {
+    color: var(--words);
+    text-align: center;
+    padding: 40px
+}
+
+ .text{
+    padding-right:  15vw;
+    padding-left: 15vw;
+    color: var(--words);
+
+}

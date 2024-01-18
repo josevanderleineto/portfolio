@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+
+:root {
+  --blue: #072758;
+  --background: linear-gradient(to bottom, #0b3374, #F6F6F6);
+  --bg: linear-gradient(to right, #0e2342, #9CA3AF);
+  --BG: linear-gradient(to left, #0e2342, #9CA3AF);
+  --words: #fff;
+  --bg-blue: #122B51;
+}
+
+
+.light {
+  --blue: #8fa9ee;
+  --background: linear-gradient(to bottom, #dce5f5, #f1f1f1);
+  --bg: linear-gradient(to right, #a2abb9, #e7e9ec);
+  --BG: linear-gradient(to left, #bbceeb, #ebeef1);
+  --words: #000;
+  --bg-blue: #dee6fa;
+}

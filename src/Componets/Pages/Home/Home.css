@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+#home {
+  background: var(--background);
+  padding-bottom: 170px;
+  height: 100vh;
+ 
+  
+}
+
+
+
+#title, #home {
+  padding-top: 5vw;
+  text-align: center;
+  color: var(--words);
+}
+
+#home {
+  padding-top: 100px;
+}
+
+#home p {
+  padding-bottom: 10vw;
+  color: var(--words);
+  font-size: larger;
+  font-weight: bold;
+}
+
+#profile {
+  text-align: center;
+  width: 150px;
+  border-radius: 50%;
+}
+
+#profile {
+  position: relative;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-20px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.titulo {
+  font-size: 28pt;
+  font-weight: 900;
+}
+
+.texto-home {
+  font-size: 14pt;
+}
+
+.img-home {
+  width: 25rem;
+  margin-top: 40px;
+}
+
+.container {
+  display: flex;
+}
+
+.home-textos {
+  padding: 5rem;
+}
+
+
+.resume {
+  width: 200px;
+  text-decoration: none;
+  background: var(--bg-blue);
+  background: var();
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px; /* Adicione essa linha para um border-radius no botão de resume */
+  margin-top: 20px;
+  display: inline-block;
+}

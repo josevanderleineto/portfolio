@@ -1,0 +1,51 @@
+:root {
+    --blue: #072758;
+    --background: linear-gradient(to bottom, #0b3374, #F6F6F6);
+    --bg: linear-gradient(to right, #0e2342, #9CA3AF);
+    --BG: linear-gradient(to left, #0e2342, #9CA3AF);
+    --words: #fff;
+    --bg-blue: #122B51;
+  }
+  
+  
+  .light {
+    --blue: #8fa9ee;
+    --background: linear-gradient(to bottom, #dce5f5, #f1f1f1);
+    --bg: linear-gradient(to right, #a2abb9, #e7e9ec);
+    --BG: linear-gradient(to left, #bbceeb, #ebeef1);
+    --words: #000;
+    --bg-blue: #dee6fa;
+  }
+  
+   .Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  var(--bg-blue);
+    padding-bottom: 10px;
+    height: 85px;
+
+    
+   }
+
+   .Footer p {
+    color: var(--words);
+   }
+
+   .Footer a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--words);
+   }
+
+
+  .social-icons a {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  .social-icons a > img {
+    padding-top: 40px;
+    width: 20px;
+    
+  }

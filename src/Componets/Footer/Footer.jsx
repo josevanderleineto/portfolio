@@ -1,0 +1,27 @@
+import '../Footer/Footer.css';
+import linkedin from '../assets/img/linkedin.svg';
+import github from '../assets/img/github.svg';
+import behance from '../assets/img/behance.png';
+import instagram from '../assets/img/instagram.svg';
+const Footer = () => {
+    return(
+        <div className="Footer">
+         <div className="social-icons">
+                <a href="https://www.linkedin.com/in/vanderleineto/"  target="blank"><img src={linkedin} alt="Linkedin" /></a>
+                <a href="https://github.com/josevanderleineto" target="blank"><img src={github} alt="Github" /></a>
+                <a href="https://www.behance.net/josvanderlei1" target="blank"><img src={behance} alt="Bihance" /></a>
+                <a href="https://www.instagram.com/josevanderleineto/" target="blank"><img src={instagram} alt="Instagram" /></a>
+            </div>
+        <a href="mailto:jvn.neto@protonmail.com" className="email
+
+">
+            jvn.neto@protonmail.com
+        </a>
+
+        <p >&copy; By Vanderlei Neto</p>
+
+        </div>
+    )
+}
+
+export default Footer;

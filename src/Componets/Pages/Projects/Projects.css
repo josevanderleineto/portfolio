@@ -1,0 +1,52 @@
+/* Projects.css */
+#projects {
+    background: var(--bg);
+}
+.projects {
+    padding-bottom: 70px;
+    display: flex;
+    align-items: stretch;
+  }
+  
+  /* Seus estilos existentes */
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body {
+    flex-grow: 1;
+  }
+  
+  .card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-text {
+    font-size: 8pt;
+  }
+  
+  /* Adicione as seguintes regras de estilo para tornar os botões responsivos em dispositivos móveis */
+  @media (max-width: 767px) {
+    .project-card {
+      height: auto;
+    }
+  
+    .btn-primary,
+    .btn-secondary {
+      width: 100%;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /* Novas regras para alinhar os botões na mesma linha */
+  .row.justify-content-center .project-card {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
