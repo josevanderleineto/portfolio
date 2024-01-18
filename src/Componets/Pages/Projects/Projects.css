@@ -1,6 +1,7 @@
 /* Projects.css */
 #projects {
     background: var(--bg);
+    padding-top: 60px;
 }
 .projects {
     padding-bottom: 70px;
@@ -30,23 +31,21 @@
   
   /* Adicione as seguintes regras de estilo para tornar os botões responsivos em dispositivos móveis */
   @media (max-width: 767px) {
+    #projects {
+      display: flex;
+      justify-content: center;
+      padding-right: 1.5rem;
+  }
     .project-card {
       height: auto;
     }
   
-    .btn-primary,
-    .btn-secondary {
-      width: 100%;
-      margin-bottom: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  
+   
   /* Novas regras para alinhar os botões na mesma linha */
   .row.justify-content-center .project-card {
     margin-right: 10px;
     margin-left: 10px;
   }
+
+}
   

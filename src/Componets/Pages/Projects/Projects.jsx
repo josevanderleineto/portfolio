@@ -19,7 +19,7 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
                 Visitar Site
               </a>
               <a href={githubLink} className="btn btn-secondary btn-block" style={{ gridColumn: '3' }}>
-                Repositório no GitHub
+                Repositório
               </a>
             </div>
           </div>
