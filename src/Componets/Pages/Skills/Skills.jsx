@@ -1,7 +1,7 @@
 import '../Skills/Skills.css'
 import html from "../../assets/img/file-type-html.svg";
 import css from "../../assets/img/file-type-css.svg";
-import js from "../../assets/img/javaScript-js.svg"; 
+import js from "../../assets/img/javascript-js.svg"; 
 import typescript from "../../assets/img/typescript-icon.svg";
 import nodejs from "../../assets/img/nodejs.svg";
 import reactjs from "../../assets/img/react.svg";
