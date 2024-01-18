@@ -33,7 +33,7 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
       <div> 
         <Menu />     
       <div id="projects" className="d-flex flex-column min-height-100vh">
-        <h2 className='text-center text-dark'>Projects</h2>
+        <h2 className='text-center text-white'>Projects</h2>
         <div className="container flex-grow-1 mt-5">
           <div className="row justify-content-center">
             <div className="col-md-12 text-center">{/* Conteúdo opcional para a parte superior da sua página */}</div>
