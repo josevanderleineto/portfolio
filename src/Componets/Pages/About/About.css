@@ -2,7 +2,6 @@
 #about {
     background: var(--bg);
     padding: 40px;
-    height: 100vh;
 }
 #about h2 {
     color: var(--words);

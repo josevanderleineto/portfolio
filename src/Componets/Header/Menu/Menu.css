@@ -78,6 +78,7 @@
   
   @media screen and (max-width: 768px) {
     .navbar-links {
+      height: 200px;
       position: absolute;
       display: none;
       flex-direction: column;
