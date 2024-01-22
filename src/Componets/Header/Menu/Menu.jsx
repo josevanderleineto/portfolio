@@ -12,9 +12,9 @@ const Menu = () => {
       <div className="navbar-logo"><img src={logo} alt="Logo tag" /></div>
       <ul className={`navbar-links ${showMenu ? "show-menu" : ""}`}>
       <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/skills">Skills</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
+        <li><Link to="/about">Sobre</Link></li>
+        <li><Link to="/skills">Habilidades</Link></li>
+        <li><Link to="/projects">Projetos</Link></li>
       </ul>
       <div className="hamburger-menu" onClick={() => setShowMenu(!showMenu)}>
         <div className="line"></div>

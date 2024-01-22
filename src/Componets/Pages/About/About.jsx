@@ -7,7 +7,7 @@ const About = () => {
         <div>
             <Menu />
             <section id="about">
-            <h2>About</h2>
+            <h2>Sobre Mim</h2>
            <p className="text">Sou um entusiasta da tecnologia e desenvolvedor front-end com uma paixão por criar experiências digitais envolventes. Minha jornada começou com HTML, CSS e JavaScript, e ao longo do tempo, aprimorei minhas habilidades com uso do React, Angular e Vue, adicionando profundidade e dinamismo aos meus projetos.
            </p>
            <p className="text">Atualmente, faço parte do Grupo de Pesquisa Onda Digital na Universidade Federal da Bahia (UFBA), onde integro a equipe de desenvolvimento web. Este ambiente acadêmico tem sido fundamental para expandir meu conhecimento e explorar soluções inovadoras para desafios específicos. Como estudante de Biblioteconomia e Documentação na UFBA, tenho dedicado meu tempo ao desenvolvimento de ferramentas que contribuem para a área da Biblioteconomia e Ciência da Informação.

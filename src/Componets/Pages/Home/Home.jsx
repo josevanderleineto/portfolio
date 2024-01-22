@@ -9,10 +9,10 @@ const Home = () => {
             <header><Menu/></header>
             <section id="home">
                 <h1 id="title">Vanderlei Neto</h1>
-                <p><strong>Front End Developer</strong></p>
+                <p><strong>Desenvolvedor Front End</strong></p>
                 <img src={profile} alt="" id="profile" /> 
                 <div>
-                    <Link className="resume">RESUME</Link>   
+                    <Link className="resume"><strong>CV</strong></Link>   
                 </div>
             </section>
         </div>
