@@ -6,7 +6,6 @@ import Home from '../Pages/Home/Home';
 import About from '../Pages/About/About';
 import Skills from '../Pages/Skills/Skills';
 import Projects from '../Pages/Projects/Projects';
-import Sitemap from '../../../Sitemap';
 const AppRoutes = () => {
   return (
     <Router>
@@ -15,10 +14,6 @@ const AppRoutes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
-        {/* Adicione mais rotas conforme necessário */}
-
-        {/* Rota para o Sitemap */}
-        <Route path="/sitemap.xml" element={<Sitemap />} /> 
       </Routes>
     </Router>
   );

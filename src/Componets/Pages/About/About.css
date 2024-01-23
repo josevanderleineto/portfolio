@@ -1,12 +1,13 @@
 
 #about {
     background: var(--bg);
-    padding: 40px;
+    padding: 20px;
+    height: 100vh;
 }
 #about h2 {
     color: var(--words);
     text-align: center;
-    padding: 40px
+    padding: 30px
 }
 
  .text{

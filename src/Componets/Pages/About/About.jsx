@@ -1,5 +1,6 @@
 import '../About/About.css';
 import Menu from "../../Header/Menu/Menu";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 const About = () => {
