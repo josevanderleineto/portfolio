@@ -24,7 +24,7 @@
     justify-content: center;
     background-color:  var(--bg-blue);
     padding-bottom: 10px;
-    height: 85px;
+    height: 130px;
 
     
    }
@@ -46,6 +46,6 @@
   
   .social-icons a > img {
     padding-top: 40px;
-    width: 20px;
+    width: 40px;
     
   }
