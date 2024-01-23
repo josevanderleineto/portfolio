@@ -21,7 +21,7 @@ const Skills = () => {
                 <Menu />
             </header>
         <section id="skills">
-    <h2>Skills</h2>
+    <h1>Habilidades</h1>
         <div className="box-container">
         <div className="box-skill">
             <img src={html} alt=""/>

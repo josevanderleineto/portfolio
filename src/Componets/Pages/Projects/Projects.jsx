@@ -43,8 +43,8 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
             {/* Projeto 1 */}
             <ProjectCard
               imgSrc={tabela}
-              title="Gerador de notação de autor com tabela Cutter"
-              description="A Notação de Autor é uma parte essencial na catalogação e organização de bibliotecas e acervos. Uma ferramenta fundamental para isso é a Tabela Cutter, um sistema que permite criar códigos únicos para autores, facilitando a busca e localização de obras. Neste contexto, desenvolvi um gerador de Código de Notação de Autor utilizando JavaScript, que incorpora a lógica da Tabela Cutter."
+              title="Tabela Cutter"
+              description="A Notação de Autor é uma parte essencial na catalogação e organização de bibliotecas e acervos."
               siteLink="https://www.tabelacutter.online/"
               githubLink="https://github.com/josevanderleineto/tebela-cutter"
             />
@@ -53,7 +53,7 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
             <ProjectCard
               imgSrc={embreve}
               title="Projeto 2"
-              description=" Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              description=" Ddo Projeto 2.orem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. rrrs  r rr "
               siteLink="https://projeto2.com"
               githubLink="https://github.com/projeto2"
             />
@@ -62,7 +62,7 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
             <ProjectCard
               imgSrc={embreve}
               title="Projeto 3"
-              description="Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrição do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              description="Descrição do Projeto 2. Lore elit. Descrição ção do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing eldipiscing elit."
               siteLink=""
               githubLink=""
             />
