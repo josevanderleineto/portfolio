@@ -1,11 +1,11 @@
 import '../Footer/Footer.css';
-import linkedin from '../assets/img/linkedin.svg';
-import github from '../assets/img/github.svg';
-import behance from '../assets/img/behance.png';
-import instagram from '../assets/img/instagram.svg';
+import linkedin from '../../assets/img/linkedin.svg';
+import github from '../../assets/img/github.svg';
+import behance from '../../assets/img/behance.png';
+import instagram from '../../assets/img/instagram.svg';
 const Footer = () => {
     return(
-        <div className="Footer">
+        <footer className="Footer">
          <div className="social-icons">
                 <a href="https://www.linkedin.com/in/vanderleineto/"  target="blank"><img src={linkedin} alt="Linkedin" /></a>
                 <a href="https://github.com/josevanderleineto" target="blank"><img src={github} alt="Github" /></a>
@@ -20,7 +20,7 @@ const Footer = () => {
 
         <p >&copy; By Vanderlei Neto</p>
 
-        </div>
+        </footer>
     )
 }
 

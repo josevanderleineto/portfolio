@@ -4,8 +4,8 @@ import Menu from '../../Header/Menu/Menu';
 import '../Home/Home.css';
 import { Link } from 'react-router-dom';
 
-import profile from '../../assets/img/profile.jpeg';
-import resumePdf from '../../assets/Curriculo.pdf'; // Certifique-se de substituir pelo caminho real do seu arquivo PDF
+import profile from '../../../assets/img/profile.jpeg';
+import resumePdf from '../../../assets/Curriculo.pdf'; // Certifique-se de substituir pelo caminho real do seu arquivo PDF
 
 const Home = () => {
     const handleResumeClick = () => {

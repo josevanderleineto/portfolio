@@ -1,9 +1,9 @@
-import tabela from '../../assets/img/tabela-cutter.svg';
-import embreve from '../../assets/img/Embreve.svg';
+import tabela from '../../../assets/img/tabela-cutter.svg';
+import embreve from '../../../assets/img/Embreve.svg';
 import '../Projects/Projects.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../Componets/../../src/index.css';
-import Menu from '../../Header/Menu/Menu'
+import Menu from '../../Header/Menu/Menu';
 
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {

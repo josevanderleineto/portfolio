@@ -13,10 +13,7 @@ function App() {
   return (
       <main>
         <AppRoutes />
-        <header>
-        </header>
           <Footer />
-
       </main>
   )
 }

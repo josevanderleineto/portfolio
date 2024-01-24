@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.css';
-import logo from '../../assets/img/logo.svg';
+import logo from '../../../assets/img/logo.svg';
 
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);

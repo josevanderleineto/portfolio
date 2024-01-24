@@ -1,8 +1,8 @@
 #projects {
   background: var(--bg);
   padding-top: 70px;
-  padding-left: 1.5rem; /* Ajuste o padding esquerdo para criar espaço à esquerda dos cards */
-  padding-right: 1.5rem; /* Ajuste o padding direito para criar espaço à direita dos cards */
+  padding-left: 1.5rem; /* Adjust the left padding to create space to the left of the cards */
+  padding-right: 1.5rem; /* Adjust the right padding to create space to the right of the cards */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,45 +10,83 @@
   text-align: center;
 }
 
-/* Restante do seu CSS... */
-
+/* Rest of your CSS... */
 
 .projects {
   display: flex;
-  align-items: center;
+  align-items: stretch; /* Align items to stretch to the same height */
 }
 
 .project-card {
-  margin: 0 10px; /* Adicione esta linha para criar uma margem uniforme à esquerda e à direita dos cards */
+  margin: 0 10px;
   display: flex;
   flex-direction: column;
+  height: 100%; /* Make sure the project cards take 100% height of their container */
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto; /* Ensure the image height adjusts proportionally to its width */
 }
 
 .card-body {
   flex-grow: 1;
 }
 
-.card-img-top {
-  max-width: 100%;
-  height: auto;
-}
-
 .card-text {
   font-size: 8pt;
 }
 
-/* Adicione as seguintes regras de estilo para tornar os botões responsivos em dispositivos móveis */
 @media (max-width: 767px) {
   #projects {
     padding-right: 1.5rem;
   }
 
   .projects {
-    width: 300px;
-    height: 350px;
+    flex-direction: column;
+    align-items: center;
   }
+
   .project-card {
-    margin: 0 10px; /* Ajuste a margem para dispositivos móveis se necessário */
+    margin: 10px 0;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .card-img-top {
+    max-width: 100%;
     height: auto;
   }
+
+  .btn {
+    width: 100%; /* Make buttons take up full width */
+    margin-top: 10px; /* Add some space between buttons on mobile */
+  }
 }
+@media (max-width: 950px) {
+  #projects {
+    padding-right: 1.5rem;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    margin: 10px 0;
+    max-width: 400px; /* Adjust maximum width for tablets */
+    width: 100%;
+  }
+
+  .card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+

@@ -1,16 +1,16 @@
 import '../Skills/Skills.css'
-import html from "../../assets/img/file-type-html.svg";
-import css from "../../assets/img/file-type-css.svg";
-import js from "../../assets/img/javascript-js.svg"; 
-import typescript from "../../assets/img/typescript-icon.svg";
-import nodejs from "../../assets/img/nodejs.svg";
-import reactjs from "../../assets/img/react.svg";
-import angular from "../../assets/img/angularjs-original.svg";
-import vue from "../../assets/img/vue.svg";
-import bootstrep from "../../assets/img/bootstrap-plain.svg";
-import tailwindcss from "../../assets/img/tailwind-css.svg";
-import figma from "../../assets/img/figma.svg";
-import Menu from '../../Header/Menu/Menu';
+import html from "../../../assets/img/file-type-html.svg";
+import css from "../../../assets/img/file-type-css.svg";
+import js from "../../../assets/img/javascript-js.svg"; 
+import typescript from "../../../assets/img/typescript-icon.svg";
+import nodejs from "../../../assets/img/nodejs.svg";
+import reactjs from "../../../assets/img/react.svg";
+import angular from "../../../assets/img/angularjs-original.svg";
+import vue from "../../../assets/img/vue.svg";
+import bootstrep from "../../../assets/img/bootstrap-plain.svg";
+import tailwindcss from "../../../assets/img/tailwind-css.svg";
+import figma from "../../../assets/img/figma.svg";
+import Menu from '../../../Componets/Header/Menu/Menu';
 
 
 const Skills = () => {
