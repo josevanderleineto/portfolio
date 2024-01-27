@@ -1,5 +1,6 @@
 import '../About/About.css';
 import Menu from "../../Header/Menu/Menu";
+import Footer from "../../../Componets/Footer/Footer"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -7,7 +8,7 @@ const About = () => {
     return (
         <div>
             <Menu />
-            <section id="about">
+            <div id="about">
             <h2>Sobre Mim</h2>
            <p className="text">Sou um entusiasta da tecnologia e desenvolvedor front-end com uma paixão por criar experiências digitais envolventes. Minha jornada começou com HTML, CSS e JavaScript, e ao longo do tempo, aprimorei minhas habilidades com uso do React, Angular e Vue, adicionando profundidade e dinamismo aos meus projetos.
            </p>
@@ -17,7 +18,7 @@ const About = () => {
           </p>
           <p className="text">Além do meu envolvimento acadêmico, atuo como freelancer, colaborando com diversos clientes para transformar ideias em realidade digital. Minha abordagem equilibra criatividade e funcionalidade, resultando em produtos web que não apenas impressionam visualmente, mas também oferecem uma experiência intuitiva aos usuários.
          </p>
-       </section>
+       </div>
         </div>
     )
 }

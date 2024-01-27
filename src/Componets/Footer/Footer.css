@@ -39,7 +39,16 @@
     color: var(--words);
    }
 
+  
+.Footer .email {
+  font-size: 14pt;
+  font-weight: 600;
+}
 
+.Footer .email:hover{
+  font-size: 17pt;
+  font-weight: 800;
+}
   .social-icons a {
     margin-right: 10px; /* Adjust the margin as needed */
   }
@@ -48,4 +57,8 @@
     padding-top: 40px;
     width: 40px;
     
+  }
+
+  .social-icons a > img:hover {
+    width: 60px;
   }

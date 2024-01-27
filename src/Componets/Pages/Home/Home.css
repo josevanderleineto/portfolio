@@ -92,4 +92,17 @@
   border-radius: 5px; /* Adicione essa linha para um border-radius no botão de resume */
   margin-top: 20px;
   display: inline-block;
+  font-size: 17pt;
+  font-weight: 500;
+}
+
+.resume:hover {
+  font-size: 19pt;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 600px){
+  .resume{
+    font-size: 14pt;
+  }
 }

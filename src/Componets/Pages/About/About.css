@@ -1,8 +1,8 @@
 
 #about {
     background: var(--bg);
-    height: 100vh;
     padding-top: 70px;
+    padding-bottom: 30px;
 }
 #about h2 {
     color: var(--words);
@@ -16,3 +16,9 @@
     color: var(--words);
 
 }
+
+/* @media screen and (max-width: 700px) and (min-width: 200px){
+    #about {
+        height: 100%;
+    }
+} */
