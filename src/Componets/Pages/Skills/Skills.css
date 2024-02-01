@@ -45,6 +45,9 @@
       margin: 10px;
       text-align: center;
       background-color: #f0f0f0;
+      box-shadow: -5px -12px 15px 1px rgba(139,219,237,0.68);
+      -webkit-box-shadow: -5px -12px 15px 1px rgba(139,219,237,0.68);
+      -moz-box-shadow: -5px -12px 15px 1px rgba(139,219,237,0.68);
   }
 
  

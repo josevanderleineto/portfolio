@@ -28,7 +28,7 @@
 }
 
 .navbar {
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,8 +61,15 @@
     color: var(--words);
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
   }
+
+  .navbar-links li a:hover {
+    font-size: 20pt;
+    font-weight: 900;
+    text-decoration: underline;
+  }
+
   
   .hamburger-menu {
     display: none;

@@ -4,6 +4,9 @@ import '../Projects/Projects.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../Componets/../../src/index.css';
 import Menu from '../../Header/Menu/Menu';
+import blog from '../../../assets/img/CapaBlog.svg';
+import organo from '../../../assets/img/capaOrgano.svg';
+
 
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
@@ -15,10 +18,10 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
             <div className="d-flex justify-content-center">
-              <a href={siteLink} className="btn btn-primary" style={{ gridColumn: '1 / span 2', marginRight: '10px' }}>
+              <a target='__blank' href={siteLink} className="btn btn-primary" style={{ gridColumn: '1 / span 2', marginRight: '10px' }}>
                 Visitar Site
               </a>
-              <a href={githubLink} className="btn btn-secondary btn-block" style={{ gridColumn: '3' }}>
+              <a target='__blank' href={githubLink} className="btn btn-secondary btn-block" style={{ gridColumn: '3' }}>
                 Repositório
               </a>
             </div>
@@ -44,27 +47,27 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
             <ProjectCard
               imgSrc={tabela}
               title="Tabela Cutter"
-              description="A Notação de Autor é uma parte essencial na catalogação e organização de bibliotecas e acervos."
+              description="Gerador de notação de autor Cutter feito com JavaScript, HTML5 e CSS3"
               siteLink="https://www.tabelacutter.online/"
               githubLink="https://github.com/josevanderleineto/tebela-cutter"
             />
   
             {/* Projeto 2 */}
             <ProjectCard
-              imgSrc={embreve}
-              title="Projeto 2"
-              description=" Ddo Projeto 2.orem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. rrrs  r rr "
-              siteLink="https://projeto2.com"
-              githubLink="https://github.com/projeto2"
+              imgSrc={blog}
+              title="Blog"
+              description="Blog sobre desevolvimento Web Front-End feito com JavaScript, Angular e CSS3"
+              siteLink="https://blog-vanderlei.vercel.app/"
+              githubLink="https://github.com/josevanderleineto/blog"
             />
   
             {/* Projeto 3 */}
             <ProjectCard
-              imgSrc={embreve}
-              title="Projeto 3"
-              description="Descrição do Projeto 2. Lore elit. Descrição ção do Projeto 2. Lorem ipsum dolor sit amet, consectetur adipiscing eldipiscing elit."
-              siteLink=""
-              githubLink=""
+              imgSrc={organo}
+              title="Organo Time de Fortinite"
+              description="Esse site lista os Plyas do time de Fortinite feito com React HTML5 e CSS3"
+              siteLink="https://organo-fortinite.vercel.app/"
+              githubLink="https://github.com/josevanderleineto/organo-fortinite"
             />
   
             {/* Adicione mais cartões de projeto conforme necessário */}

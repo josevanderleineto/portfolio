@@ -1,4 +1,5 @@
 import '../Skills/Skills.css'
+import Menu from '../../../Componets/Header/Menu/Menu';
 import html from "../../../assets/img/file-type-html.svg";
 import css from "../../../assets/img/file-type-css.svg";
 import js from "../../../assets/img/javascript-js.svg"; 
@@ -10,7 +11,9 @@ import vue from "../../../assets/img/vue.svg";
 import bootstrep from "../../../assets/img/bootstrap-plain.svg";
 import tailwindcss from "../../../assets/img/tailwind-css.svg";
 import figma from "../../../assets/img/figma.svg";
-import Menu from '../../../Componets/Header/Menu/Menu';
+import git from "../../../assets/img/git.svg";
+import gitHub from "../../../assets/img/github-code-source.svg";
+
 
 
 const Skills = () => {
@@ -67,6 +70,14 @@ const Skills = () => {
          <div className="box-skill">
             <img src={figma} alt="Figma"/>
             <p>Figma</p>
+         </div>
+         <div className="box-skill">
+            <img src={git} alt="Git"/>
+            <p>Git</p>
+         </div>
+         <div className="box-skill">
+            <img src={gitHub} alt="GitHub"/>
+            <p>GitHub</p>
          </div>
         </div>
     </section>

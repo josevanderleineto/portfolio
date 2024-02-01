@@ -38,6 +38,9 @@
   text-align: center;
   width: 150px;
   border-radius: 50%;
+  box-shadow: -4px -16px 68px 49px rgba(77,195,222,0.57);
+-webkit-box-shadow: -4px -16px 68px 49px rgba(77,195,222,0.57);
+-moz-box-shadow: -4px -16px 68px 49px rgba(77,195,222,0.57);
 }
 
 #profile {
