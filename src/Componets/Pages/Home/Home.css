@@ -38,9 +38,9 @@
   text-align: center;
   width: 150px;
   border-radius: 50%;
-  box-shadow: -4px -16px 68px 49px rgba(77,195,222,0.57);
--webkit-box-shadow: -4px -16px 68px 49px rgba(77,195,222,0.57);
--moz-box-shadow: -4px -16px 68px 49px rgba(77,195,222,0.57);
+  box-shadow: 2px -3px 51px 33px rgba(27,212,212,0.85);
+  -webkit-box-shadow: 2px -3px 51px 33px rgba(27,212,212,0.85);
+  -moz-box-shadow: 2px -3px 51px 33px rgba(27,212,212,0.85);
 }
 
 #profile {
@@ -97,6 +97,9 @@
   display: inline-block;
   font-size: 17pt;
   font-weight: 500;
+  box-shadow: -3px -12px 106px 33px rgba(18,65,84,0.62);
+-webkit-box-shadow: -3px -12px 106px 33px rgba(18,65,84,0.62);
+-moz-box-shadow: -3px -12px 106px 33px rgba(18,65,84,0.62);
 }
 
 .resume:hover {

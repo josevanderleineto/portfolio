@@ -22,9 +22,9 @@
   display: flex;
   flex-direction: column;
   height: 100%; /* Make sure the project cards take 100% height of their container */
-  -moz-box-shadow: -3px 18px 15px 0px rgba(0,0,0,0.68);
- -webkit-box-shadow: -3px 18px 15px 0px rgba(0,0,0,0.68);
- box-shadow: -3px 18px 15px 0px rgba(0,0,0,0.68);
+  box-shadow: -3px 18px 5px -5px rgba(28,33,36,0.68);
+-webkit-box-shadow: -3px 18px 5px -5px rgba(28,33,36,0.68);
+-moz-box-shadow: -3px 18px 5px -5px rgba(28,33,36,0.68);
 }
 
 .card-img-top {
