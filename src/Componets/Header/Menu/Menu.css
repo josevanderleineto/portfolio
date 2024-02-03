@@ -50,7 +50,7 @@
     align-items: center;
     list-style: none;
     margin: 0;
-    padding-right: 14px;
+    padding-right: 10px;
   }
   
   .navbar-links li {
@@ -73,7 +73,6 @@
   
   .hamburger-menu {
     display: none;
-    cursor: pointer;
   }
   
   .line {
@@ -110,6 +109,7 @@
   
     .hamburger-menu {
       display: block;
+      padding-right: 8px;
     }
   }
   

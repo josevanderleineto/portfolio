@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../Componets/../../src/index.css';
 import Menu from '../../Header/Menu/Menu';
 import blog from '../../../assets/img/CapaBlog.svg';
-import organo from '../../../assets/img/capaOrgano.svg';
+import organo from '../../../assets/img/best.png';
 
 
 // eslint-disable-next-line react/prop-types
@@ -41,7 +41,7 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
           <div className="row justify-content-center">
             <div className="col-md-12 text-center">{/* Conteúdo opcional para a parte superior da sua página */}</div>
           </div>
-  aaa
+  
           <div className="row justify-content-center">
             {/* Projeto 1 */}
             <ProjectCard
