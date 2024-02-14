@@ -26,7 +26,7 @@ const Home = () => {
             <section id="home">
                 <h1 id="title">Vanderlei Neto</h1>
                 <p>
-                    <strong>Desnvolvedor Front End</strong>
+                    <strong>Desenvolvedor Web Front-End</strong>
                 </p>
                 <img src={profile} alt="" id="profile" />
                 <div>

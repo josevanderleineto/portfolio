@@ -3,6 +3,7 @@
     background: var(--bg);
     padding-top: 70px;
     padding-bottom: 30px;
+    height: 100vh;
 }
 #about h2 {
     color: var(--words);

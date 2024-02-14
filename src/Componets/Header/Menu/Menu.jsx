@@ -15,6 +15,7 @@ const Menu = () => {
         <li><Link to="/about">Sobre</Link></li>
         <li><Link to="/skills">Habilidades</Link></li>
         <li><Link to="/projects">Projetos</Link></li>
+        <li><Link to="/contact">Contato</Link></li>
       </ul>
       <div className="hamburger-menu" onClick={() => setShowMenu(!showMenu)}>
         <div className="line"></div>

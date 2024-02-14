@@ -12,11 +12,6 @@ const Footer = () => {
                 <a href="https://www.behance.net/josvanderlei1" target="blank"><img src={behance} alt="Bihance" /></a>
                 <a href="https://www.instagram.com/josevanderleineto/" target="blank"><img src={instagram} alt="Instagram" /></a>
             </div>
-        <a href="mailto:jvn.neto@protonmail.com" className="email
-
-">
-            jvn.neto@protonmail.com
-        </a>
 
         <p >&copy; By Vanderlei Neto</p>
 

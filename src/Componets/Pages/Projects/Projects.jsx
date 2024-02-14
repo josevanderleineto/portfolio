@@ -4,7 +4,7 @@ import '../Projects/Projects.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../Componets/../../src/index.css';
 import Menu from '../../Header/Menu/Menu';
-import blog from '../../../assets/img/CapaBlog.svg';
+import blog from '../../../assets/img/CapaBlog.png';
 import organo from '../../../assets/img/best.png';
 
 
@@ -13,7 +13,7 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
     return (
       <div className="col-md-4 mb-4 projects">
         <div className="card text-center project-card">
-          <img src={imgSrc} className="card-img-top" alt={title} />
+          <img src={imgSrc} className="card-img-top " alt={title} />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
@@ -22,7 +22,7 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
                 Visitar Site
               </a>
               <a target='__blank' href={githubLink} className="btn btn-secondary btn-block" style={{ gridColumn: '3' }}>
-                Repositório
+                GitHub
               </a>
             </div>
           </div>
@@ -33,7 +33,7 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
   
   const Projects = () => {
     return (
-      <div> 
+      <div className='projectsContainer'> 
         <Menu />     
       <div id="projects" className="d-flex flex-column min-height-100vh">
         <h2 className='text-center text-white'>Projetos</h2>
@@ -64,19 +64,27 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
             {/* Projeto 3 */}
             <ProjectCard
               imgSrc={organo}
-              title="Organo Time de Fortinite"
-              description="Esse site lista os Plyas do time de Fortinite feito com React HTML5 e CSS3"
+              title="Organo  Fortinite"
+              description="Esse site lista os Players do time de Fortinite feito com React HTML5 e CSS3"
               siteLink="https://organo-fortinite.vercel.app/"
               githubLink="https://github.com/josevanderleineto/organo-fortinite"
             />
   
             {/* Adicione mais cartões de projeto conforme necessário */}
+
+            <ProjectCard
+              imgSrc={embreve}
+              title="Embreve"
+              description="Embreve adicionarei novo projeto"
+              siteLink="#"
+              githubLink="#"
+            />
+            
             
           </div>
         </div>
       </div>
       </div>
-  
     );
   };
   

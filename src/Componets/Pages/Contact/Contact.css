@@ -1,0 +1,66 @@
+/* Contact.css */
+.contact {
+    background: var(--background);
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    color: var(--words);
+}
+.contact-container {
+  
+    max-width: 700px; /* Optional: Set a maximum width for content */
+    margin: 0 auto; /* Horizontally center the container */
+    padding-top: 30px;
+  }
+  
+  .form {
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--blue); 
+    padding: 30px;
+    color: var(--words);
+    border-radius: 8px;
+  }
+  .form form {
+    height: 30rem;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 10pt;
+    
+  }
+
+  input {
+    height: 2.5rem;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    height: 4rem;
+  }
+  
+  .btn-form {
+    background: var(--ba-sec);
+  }
+  
+  /* Optional: Media queries for different screen sizes */
+  @media (max-width: 768px) {
+    /* Adapt styles for smaller screens */
+  }
+  
+  @media (max-width: 480px) {
+    /* Adapt styles for mobile devices */
+  }
+  

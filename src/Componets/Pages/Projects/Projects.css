@@ -1,6 +1,8 @@
+
+
 #projects {
   background: var(--bg);
-  padding-top: 70px;
+  padding-top: 60px;
   padding-left: 1.5rem; /* Adjust the left padding to create space to the left of the cards */
   padding-right: 1.5rem; /* Adjust the right padding to create space to the right of the cards */
   display: flex;
@@ -15,13 +17,18 @@
 .projects {
   display: flex;
   align-items: stretch; /* Align items to stretch to the same height */
+  justify-content: center;
+
 }
 
 .project-card {
   margin: 0 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  
   height: 100%; /* Make sure the project cards take 100% height of their container */
+  width: 20rem;
   box-shadow: -3px 18px 5px -5px rgba(28,33,36,0.68);
 -webkit-box-shadow: -3px 18px 5px -5px rgba(28,33,36,0.68);
 -moz-box-shadow: -3px 18px 5px -5px rgba(28,33,36,0.68);
@@ -29,11 +36,13 @@
 
 .card-img-top {
   max-width: 100%;
-  height: auto; /* Ensure the image height adjusts proportionally to its width */
+  height: 7rem; /* Ensure the image height adjusts proportionally to its width */
 }
 
 .card-body {
   flex-grow: 1;
+  gap: 4px;
+  ju=
 }
 
 .card-text {
@@ -66,7 +75,7 @@
     margin-top: 10px; /* Add some space between buttons on mobile */
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 700px) {
   #projects {
     padding-right: 1.5rem;
   }
@@ -77,19 +86,31 @@
   }
 
   .project-card {
-    margin: 10px 0;
-    max-width: 400px; /* Adjust maximum width for tablets */
-    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
   }
-
-  .card-img-top {
-    max-width: 100%;
-    height: auto;
+  
+  .card-body {
+    flex-grow: 1;
+    padding: 10px;
   }
+  
+  .card-text {
+    font-size: 10pt;
+  }
+  
 
   .btn {
     width: 100%;
     margin-top: 10px;
   }
 }
+
+@media (max-width: 987px) {
+  .btn {
+    font-size: 8pt;
+  }
+}
+
 
