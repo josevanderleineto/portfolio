@@ -2,7 +2,7 @@
 
 #projects {
   background: var(--bg);
-  padding-top: 60px;
+  padding-top: 10px;
   padding-left: 1.5rem; /* Adjust the left padding to create space to the left of the cards */
   padding-right: 1.5rem; /* Adjust the right padding to create space to the right of the cards */
   display: flex;
@@ -11,6 +11,8 @@
   flex-direction: column;
   text-align: center;
 }
+
+
 
 /* Rest of your CSS... */
 
@@ -42,7 +44,7 @@
 .card-body {
   flex-grow: 1;
   gap: 4px;
-  ju=
+  justify-content: center;
 }
 
 .card-text {

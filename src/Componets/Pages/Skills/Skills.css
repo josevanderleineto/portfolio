@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-left: 20px; /* Adicione o padding desejado à esquerda */
     padding-right: 20px; /* Adicione o padding desejado à direita */
     padding-bottom: 40px;
@@ -36,8 +36,8 @@
     }
     
     #skills .box-skill {
-      width: 100px;
-      height: 120px;
+      width:90px;
+      height: 110px;
       display: flex;
       flex-direction: column;
       align-items: center;

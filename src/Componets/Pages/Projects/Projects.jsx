@@ -72,14 +72,14 @@ const ProjectCard = ({ imgSrc, title, description, siteLink, githubLink }) => {
   
             {/* Adicione mais cartões de projeto conforme necessário */}
 
-            <ProjectCard
+             <ProjectCard
               imgSrc={embreve}
               title="Embreve"
               description="Embreve adicionarei novo projeto"
               siteLink="#"
               githubLink="#"
             />
-            
+             
             
           </div>
         </div>
