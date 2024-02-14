@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
+    
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -12,6 +13,7 @@ const Contact = () => {
         message: ''
     });
     const [errors, setErrors] = useState({});
+    const [submissionMessage, setSubmissionMessage] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -64,9 +66,11 @@ const Contact = () => {
             emailjs.send("service_yzcndva", "template_i288fdc", templateParms, "2MlfHqJWVj2ASkdZJ")
                 .then((response) => {
                     console.log("Email enviado", response.status, response.text );
+                    setSubmissionMessage("Email enviado com sucesso! Em breve retornarei o contato.");
                 })
                 .catch((err) => {
                     console.log("Erro: ", err);
+                    setSubmissionMessage("Ocorreu um erro ao enviar o email. Por favor, tente novamente mais tarde.");
                 });
         } else {
             setErrors(validationErrors);
@@ -104,6 +108,7 @@ const Contact = () => {
                             {errors.message && <span className="error">{errors.message}</span>}
                         </div>
                         <input type='submit' value='Enviar' className='btn-form'/>
+                        {submissionMessage && <p className="submission-message">{submissionMessage}</p>}
                     </form>
                 </div>
             </div>
