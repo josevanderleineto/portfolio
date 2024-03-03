@@ -1,27 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.vanderleinto.tech/</loc>
-        <lastmod>2024-01-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://www.vanderleinto.tech/about</loc>
-        <lastmod>2024-01-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.vanderleinto.tech/skills</loc>
-        <lastmod>2024-01-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.vanderleinto.tech/projects</loc>
-        <lastmod>2024-01-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+<div id="in-page-channel-node-id" data-channel-name="in_page_channel_DuNAnz"/>
+<url>
+<loc>https://www.vanderleineto.tech/</loc>
+<lastmod>2024-01-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://www.vanderleineto.tech/about</loc>
+<lastmod>2024-01-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.vanderleineto.tech/skills</loc>
+<lastmod>2024-01-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.vanderleineto.tech/projects</loc>
+<lastmod>2024-01-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.vanderleineto.tech/contact</loc>
+<lastmod>2024-01-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
 </urlset>
