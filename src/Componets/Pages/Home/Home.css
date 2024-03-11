@@ -24,7 +24,7 @@
 }
 
 #home {
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 #home p {
@@ -41,12 +41,10 @@
   box-shadow: 2px -3px 51px 33px rgba(27,212,212,0.85);
   -webkit-box-shadow: 2px -3px 51px 33px rgba(27,212,212,0.85);
   -moz-box-shadow: 2px -3px 51px 33px rgba(27,212,212,0.85);
-}
-
-#profile {
   position: relative;
   animation: bounce 2s infinite;
 }
+
 
 @keyframes bounce {
   0% {
@@ -108,6 +106,13 @@
 }
 
 @media screen and (max-width: 600px){
+  .resume{
+    font-size: 14pt;
+  }
+}
+
+
+@media screen and (max-width: 1900px){
   .resume{
     font-size: 14pt;
   }
