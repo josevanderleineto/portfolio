@@ -10,6 +10,8 @@
     padding-left: 20px; /* Adicione o padding desejado à esquerda */
     padding-right: 20px; /* Adicione o padding desejado à direita */
     padding-bottom: 20rem;
+    height: 100vh;
+
   }
   
   #skills .box-container {
