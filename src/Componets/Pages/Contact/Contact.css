@@ -66,12 +66,11 @@
   }
   /* Optional: Media queries for different screen sizes */
   @media (max-width: 768px) {
-    /* Adapt styles for smaller screens */
+    .contact-container {
+      width: 80%;
+    }
   }
   
-  @media (max-width: 480px) {
-    /* Adapt styles for mobile devices */
-  }
   
 
   
