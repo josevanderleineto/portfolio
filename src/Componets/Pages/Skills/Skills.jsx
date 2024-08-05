@@ -13,6 +13,7 @@ import tailwindcss from "../../../assets/img/tailwind-css.svg";
 import figma from "../../../assets/img/figma.svg";
 import git from "../../../assets/img/git.svg";
 import gitHub from "../../../assets/img/github-code-source.svg";
+import dataTexBr from "../../../assets/dataTextBr.json";
 
 
 
@@ -24,7 +25,7 @@ const Skills = () => {
                 <Menu />
             </header>
         <section id="skills">
-    <h1>Habilidades</h1>
+    <h1>{dataTexBr.skillsTitle}</h1>
         <div className="box-container">
         <div className="box-skill">
             <img src={html} alt=""/>

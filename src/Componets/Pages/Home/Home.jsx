@@ -3,9 +3,9 @@ import React from 'react';
 import Menu from '../../Header/Menu/Menu';
 import '../Home/Home.css';
 import { Link } from 'react-router-dom';
-
 import profile from '../../../assets/img/profile.jpeg';
 import resumePdf from '../../../assets/Curriculo.pdf'; // Certifique-se de substituir pelo caminho real do seu arquivo PDF
+import dataTextBr from '../../../assets/dataTextBr.json'; // Importe o JSON
 
 const Home = () => {
     const handleResumeClick = () => {
@@ -24,15 +24,15 @@ const Home = () => {
                 <Menu />
             </header>
             <section id="home">
-                <h1 id="title">Vanderlei Neto</h1>
+                <h1 id="title">{dataTextBr.title}</h1>
                 <p>
-                    <strong>Desenvolvedor Web Front-End</strong>
+                    <strong>{dataTextBr.subtitle}</strong>
                 </p>
                 <img src={profile} alt="" id="profile" />
                 <div>
                     {/* Adicione o manipulador de clique para iniciar o download */}
                     <Link className="resume" onClick={handleResumeClick}>
-                        CV
+                        {dataTextBr.cvText}
                     </Link>
                 </div>
             </section>
