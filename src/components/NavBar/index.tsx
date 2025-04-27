@@ -1,136 +1,150 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
-interface NavItemInterface {
+interface NavItem {
   url: string;
   label: string;
 }
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [locale, setLocale] = useState("en");
+  const [locale, setLocale] = useState<'en' | 'pt'>('en');
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
-  const t = useTranslations("nav");
+  const t = useTranslations('nav');
 
-  // Função para alternar idioma
-  const toggleLocale = () => {
-    const newLocale = locale === "pt" ? "en" : "pt";
-    document.cookie = `locale=${newLocale}; path=/;`;
-    setLocale(newLocale);
-    router.refresh(); // Atualiza a página para carregar nova tradução
-  };
-
-  // Ler cookie no carregamento
   useEffect(() => {
-    if (typeof document !== "undefined") {
-      const isPt = document.cookie.includes("locale=pt");
-      setLocale(isPt ? "pt" : "en");
-    }
+    const cookieLocale = document.cookie.match(/locale=(pt|en)/);
+    if (cookieLocale) setLocale(cookieLocale[1] as 'pt' | 'en');
+    setIsDarkMode(document.documentElement.classList.contains('dark'));
   }, []);
 
-  const items: NavItemInterface[] = [
-    { url: "/", label: t("home") },
-    { url: "/about", label: t("about") },
-    { url: "/services", label: t("services") },
-    { url: "/blog", label: t("blog") },
-    { url: "/contact", label: t("contact") },
+  const toggleLocale = () => {
+    const next = locale === 'pt' ? 'en' : 'pt';
+    document.cookie = `locale=${next}; path=/;`;
+    setLocale(next);
+    router.refresh();
+  };
+
+  const toggleDarkMode = () => {
+    const root = document.documentElement;
+    root.classList.toggle('dark');
+    setIsDarkMode(root.classList.contains('dark'));
+  };
+
+  const items: NavItem[] = [
+    { url: '/',        label: t('home') },
+    { url: '/about',   label: t('about') },
+    { url: '/services',label: t('services') },
+    { url: '/blog',    label: t('blog') },
+    { url: '/contact', label: t('contact') },
   ];
 
-  const closeMenu = () => setIsMenuOpen(false);
-
   return (
-    <header className="bg-slate-600 shadow-xl">
-      <nav className="flex justify-between items-center p-4">
-      
-
-        {/* Botão de bandeira */}
-        <button onClick={toggleLocale} className="ml-4">
-          <Image
-            src={locale === "en" ? "/brasil.svg" : "/united_kingdom.svg"}
-            alt={locale === "pt" ? "Português" : "English"}
-            width={30}
-            height={20}
-            className="object-cover"
-          />
-        </button>
-
-        {/* Botão Mobile */}
-        <div className="md:hidden">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
-              ></path>
-            </svg>
-          </button>
-        </div>
-
-        {/* Overlay e Menu Hambúrguer */}
-        {isMenuOpen && (
-          <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
-            onClick={closeMenu}
-          ></div>
-        )}
-
-        {/* Menu Mobile */}
-        <div
-          className={`fixed top-0 left-0 w-64 bg-slate-600 shadow-lg transform ${
-            isMenuOpen ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-300 z-50`}
-        >
+    <header className="bg-background text-text border-b border-border shadow-sm">
+      <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        {/* Idioma + Tema */}
+        <div className="flex items-center gap-4">
+          {/* Botão de idioma sem fundo */}
           <button
-            onClick={closeMenu}
-            className="text-gray-200 absolute top-4 right-4 focus:outline-none"
+            onClick={toggleLocale}
+            className="bg-transparent p-1 hover:scale-105 transition-transform cursor-pointer"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
+            <Image
+              src={locale === 'en' ? '/brasil.svg' : '/united_kingdom.svg'}
+              alt={locale === 'en' ? 'PT' : 'EN'}
+              width={28}
+              height={18}
+            />
           </button>
 
-          <ul className="flex flex-col gap-4 p-6">
-            {items.map((item, index) => (
-              <li key={index}>
-                <Link
-                  href={item.url}
-                  className={`block text-lg font-medium ${
-                    pathname === item.url ? "text-blue-400" : "text-gray-200"
-                  } hover:text-blue-300`}
-                  onClick={closeMenu}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {/* Botão de tema sem fundo */}
+          <button
+            onClick={toggleDarkMode}
+            className="bg-transparent px-3 py-1 rounded-md text-text hover:text-primary hover:scale-105 transition-transform cursor-pointer"
+          >
+            {isDarkMode ? '☀️' : '🌙'}
+          </button>
         </div>
 
         {/* Menu Desktop */}
-        <div className="hidden md:flex md:items-center">
-          <ul className="flex gap-8 items-center">
-            {items.map((item, index) => (
-              <li key={index}>
-                <Link
-                  href={item.url}
-                  className={`text-white text-lg ${
-                    pathname === item.url ? "font-bold" : "font-normal"
-                  } hover:text-blue-300`}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="hidden md:flex gap-8">
+          {items.map(item => (
+            <li key={item.url}>
+              <Link
+                href={item.url}
+                className={`text-lg hover:text-accent transition ${
+                  pathname === item.url ? 'text-primary font-semibold' : ''
+                }`}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Toggle Mobile */}
+        <button
+          onClick={() => setIsMenuOpen(v => !v)}
+          className="md:hidden p-2 focus:outline-none bg-transparent"
+        >
+          <svg
+            className="w-6 h-6 text-text"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={
+                isMenuOpen
+                  ? 'M6 18L18 6M6 6l12 12'
+                  : 'M4 6h16M4 12h16m-7 6h7'
+              }
+            />
+          </svg>
+        </button>
+
+        {/* Overlay + Menu Mobile */}
+        {isMenuOpen && (
+          <>
+            <div
+              className="menu-mobile-overlay md:hidden"
+              onClick={() => setIsMenuOpen(false)}
+            />
+            <aside
+              className={`fixed top-0 left-0 h-full w-64 menu-mobile-panel transform transition-transform duration-300 md:hidden ${
+                isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+              }`}
+            >
+              <ul className="flex flex-col p-6 space-y-4">
+                {items.map(item => (
+                  <li key={item.url}>
+                    <Link
+                      href={item.url}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={`block text-lg hover:text-accent transition ${
+                        pathname === item.url
+                          ? 'text-primary font-semibold'
+                          : ''
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          </>
+        )}
       </nav>
     </header>
   );

@@ -1,12 +1,9 @@
-import Home from "./home/page";
-
+import Home from './home/page';
  
 export default function Page() {
   return (
-    <div>
-        <div id="home">
-          <Home/>
-        </div>
-    </div>
-  )
+    <main className="relative z-10">
+      <Home />
+    </main>
+  );
 }

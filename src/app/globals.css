@@ -3,8 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Cores principais */
+  --color-background: #F9FAFB;
+  --color-foreground: #111827;
+  --color-primary: #6366F1;
+  --color-secondary: #F59E0B;
+  --color-accent: #10B981;
+  --color-muted: #9CA3AF;
+
+  /* Texto */
+  --color-text: #111827;
+  --color-text-muted: #6B7280;
+
+  /* Borda */
+  --color-border: #E5E7EB;
+}
+
+/* Modo escuro */
+.dark {
+  --color-background: #1E2A47; /* tom azulado */
+  --color-foreground: #E5E7EB;
+  --color-primary: #6366F1;
+  --color-secondary: #F59E0B;
+  --color-accent: #10B981;
+  --color-muted: #6B7280;
+
+  --color-text: #E5E7EB;
+  --color-text-muted: #9CA3AF;
+
+  --color-border: #374151;
 }
 
 /* Reset CSS */
@@ -19,7 +46,9 @@
 html,
 body {
   height: 100%;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 img,
@@ -51,4 +80,46 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* Painel específico para menu mobile */
+.menu-mobile-panel {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 50;
+}
+
+/* Overlay do menu mobile */
+.menu-mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 40;
+}
+
+/* Estilos globais de botões */
+button {
+  background-color: var(--color-primary);
+  color: var(--color-foreground);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-accent);
 }
