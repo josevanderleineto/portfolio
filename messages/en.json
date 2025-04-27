@@ -1,0 +1,12 @@
+{
+  "Home": {
+    "title": "Welcome to the site!"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact"
+  }
+}
