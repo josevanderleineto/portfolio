@@ -3,14 +3,17 @@
 @tailwind utilities;
 
 :root {
-  /* Cores principais */
-  --color-background: #F9FAFB;
-  --color-foreground: #111827;
+  /* Cores principais claro */
+  --color-background: #c1def8;
+  --color-foreground: #6366F1;
   --color-primary: #6366F1;
   --color-secondary: #F59E0B;
-  --color-accent: #10B981;
-  --color-muted: #9CA3AF;
-
+  --color-accent: #90a8f0;
+  --color-muted: #252d3b;
+  --background: #121212;
+  --foreground: #f5f5f5;
+  --color-text: #090909;
+ 
   /* Texto */
   --color-text: #111827;
   --color-text-muted: #6B7280;
@@ -21,15 +24,15 @@
 
 /* Modo escuro */
 .dark {
-  --color-background: #1E2A47; /* tom azulado */
-  --color-foreground: #E5E7EB;
-  --color-primary: #6366F1;
-  --color-secondary: #F59E0B;
-  --color-accent: #10B981;
+  --color-background: #041c4f; /* tom azulado */
+  --color-foreground: #6366F1;
+  --color-primary: #fff;
+  --color-secondary: #1ebbf5;
+  --color-accent: #bfe5ef;
   --color-muted: #6B7280;
 
-  --color-text: #E5E7EB;
-  --color-text-muted: #9CA3AF;
+  --color-text: #fff;
+  --color-text-muted: #fff;
 
   --color-border: #374151;
 }
@@ -85,7 +88,7 @@ h6 {
 /* Painel específico para menu mobile */
 .menu-mobile-panel {
   background-color: var(--color-background);
-  color: var(--color-text);
+  color: var(--color-muted);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   z-index: 50;
 }
@@ -110,7 +113,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 /* Links */

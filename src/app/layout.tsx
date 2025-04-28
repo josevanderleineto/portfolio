@@ -3,14 +3,13 @@ import { getLocale, getMessages } from 'next-intl/server';
 import Navbar from '@/components/NavBar';
 import './globals.css';
 
-// O layout precisa declarar o tipo de props que inclui o "locale"
 export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const locale = await getLocale();
-  const messages = await getMessages();
+  const locale = await getLocale(); // obtém o locale
+  const messages = await getMessages(); // carrega as mensagens para o locale
 
   return (
     <html lang={locale} suppressHydrationWarning>

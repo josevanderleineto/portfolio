@@ -14,7 +14,7 @@ interface NavItem {
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [locale, setLocale] = useState<'en' | 'pt'>('en');
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations('nav');
@@ -22,39 +22,49 @@ export default function NavBar() {
   useEffect(() => {
     const cookieLocale = document.cookie.match(/locale=(pt|en)/);
     if (cookieLocale) setLocale(cookieLocale[1] as 'pt' | 'en');
-    setIsDarkMode(document.documentElement.classList.contains('dark'));
+
+    const root = document.documentElement;
+    if (!root.classList.contains('dark')) {
+      root.classList.add('dark');
+    }
   }, []);
 
   const toggleLocale = () => {
     const next = locale === 'pt' ? 'en' : 'pt';
     document.cookie = `locale=${next}; path=/;`;
     setLocale(next);
-    router.refresh();
+
+    // Forçar a atualização da página para refletir o novo idioma
+    router.push(window.location.href); // Isso irá atualizar a página e aplicar a nova tradução
   };
 
   const toggleDarkMode = () => {
     const root = document.documentElement;
     root.classList.toggle('dark');
     setIsDarkMode(root.classList.contains('dark'));
+
+    const audio = new Audio('/switch.wav');
+    audio.volume = 0.3;
+    audio.play();
   };
 
   const items: NavItem[] = [
-    { url: '/',        label: t('home') },
-    { url: '/about',   label: t('about') },
-    { url: '/services',label: t('services') },
-    { url: '/blog',    label: t('blog') },
+    { url: '/', label: t('home') },
+    { url: '#about', label: t('about') },
+    { url: '/skills', label: t('skill') },
+    { url: '/projects', label: t('projectsList') },
     { url: '/contact', label: t('contact') },
   ];
 
   return (
-    <header className="bg-background text-text border-b border-border shadow-sm">
+    <header className=" border-b border-border shadow-sm">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Idioma + Tema */}
         <div className="flex items-center gap-4">
-          {/* Botão de idioma sem fundo */}
           <button
             onClick={toggleLocale}
             className="bg-transparent p-1 hover:scale-105 transition-transform cursor-pointer"
+            aria-label="Alternar idioma"
           >
             <Image
               src={locale === 'en' ? '/brasil.svg' : '/united_kingdom.svg'}
@@ -64,10 +74,10 @@ export default function NavBar() {
             />
           </button>
 
-          {/* Botão de tema sem fundo */}
           <button
             onClick={toggleDarkMode}
             className="bg-transparent px-3 py-1 rounded-md text-text hover:text-primary hover:scale-105 transition-transform cursor-pointer"
+            aria-label="Alternar modo escuro/claro"
           >
             {isDarkMode ? '☀️' : '🌙'}
           </button>
@@ -80,7 +90,7 @@ export default function NavBar() {
               <Link
                 href={item.url}
                 className={`text-lg hover:text-accent transition ${
-                  pathname === item.url ? 'text-primary font-semibold' : ''
+                  pathname === item.url ? 'color-text font-semibold' : ''
                 }`}
               >
                 {item.label}
@@ -89,10 +99,11 @@ export default function NavBar() {
           ))}
         </ul>
 
-        {/* Toggle Mobile */}
+        {/* Botão Mobile */}
         <button
           onClick={() => setIsMenuOpen(v => !v)}
           className="md:hidden p-2 focus:outline-none bg-transparent"
+          aria-label="Abrir menu mobile"
         >
           <svg
             className="w-6 h-6 text-text"
@@ -113,7 +124,7 @@ export default function NavBar() {
           </svg>
         </button>
 
-        {/* Overlay + Menu Mobile */}
+        {/* Menu Mobile */}
         {isMenuOpen && (
           <>
             <div

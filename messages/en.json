@@ -1,12 +1,82 @@
 {
-  "Home": {
-    "title": "Welcome to the site!"
-  },
   "nav": {
     "home": "Home",
     "about": "About",
-    "services": "Services",
-    "blog": "Blog",
+    "skill": "Skills",
+    "projectsList": "Projects",
     "contact": "Contact"
+  },
+  "titleHome": "Vanderlei Neto",
+  "subTitleHome": "Web Developer",
+  "resume": "/CV_Vanderlei_Neto_Front_End.pdf",
+  "textHome": "I am a web developer who creates websites for businesses and individuals. I turn ideas into digital solutions that attract attention and add value.",
+  "cv": "Resume",
+  "titleAbout": "About Me",
+  "aboutDetails1": "I am a passionate web developer focused on creating engaging and intuitive digital experiences. With over 3 years of experience, I specialize in building modern and responsive interfaces using technologies such as HTML, CSS, JavaScript, React, Express, and WordPress.",
+  "aboutDetails2": "I have had the opportunity to collaborate on various projects, helping to turn ideas into robust and functional digital solutions. One of my standout projects is the Author Notation Generator, based on the Cutter table.",
+  "subTitle": "Services",
+  "service1Title": "Web Development",
+  "service1Text": "I build applications using technologies like HTML, CSS, JavaScript, React, Express, and WordPress.",
+  "service2Title": "Web Design",
+  "service2Text": "I create websites with engaging and intuitive interfaces that capture attention and deliver value.",
+  "service3Title": "Consulting",
+  "service3Text": "I offer specialized consulting in website development and design, helping you achieve your digital goals.",
+  "Skill": {
+    "title": "Skills",
+    "description1": "I have a natural ability to solve problems efficiently and practically.",
+    "description2": "I have experience in software development, using modern frameworks and libraries.",
+    "description3": "I am always looking for new knowledge and techniques to improve my skills.",
+    "description4": "I also have good communication skills and am able to write clean and easy-to-understand code.",
+    "tech": "Technologies",
+    "tech1": "HTML5",
+    "tech2": "CSS3",
+    "tech3": "JavaScript",
+    "tech4": "React",
+    "tech5": "Angular",
+    "tech6": "Node.js",
+    "tech7": "MongoDB"
+  },
+  "experience": {
+    "title": "Experience",
+    "text": "Over 3 years of experience in web development, working with various clients and projects."
+  },
+  "education": {
+    "title": "Education",
+    "text": "Graduated in Computer Science from the University of São Paulo, with a specialization in web development and design."
+  },
+  "projects": {
+    "title": "My Projects",
+    "projeto1Title": "Self Portrait Project",
+    "projeto1Description": "The Self Portrait Project was developed for the Quilombola Development Network Eparrei, aiming to train 60 quilombola youth in experimental photography production. I built the website using React JS for the interface, Styled Components for responsive design, and Vercel storage for hosting and content storage.",
+    "projeto2Title": "Vaz Bookshop",
+    "projeto2Description": "Vaz Bookshop is a second-hand book sales page, offering a wide selection of affordable titles. The site was developed using NextJS, React, and TailwindCSS to provide a user-friendly and efficient interface.",
+    "viewSite": "View Site",
+    "viewCode": "View Code"
+  },
+  "contactForm": {
+    "title": "Contact",
+    "sending": "Sending...",
+    "send": "Send",
+    "labelName": "Name",
+    "labelEmail": "Email",
+    "labelSubject": "Subject",
+    "labelMessage": "Message",
+    "placeholderName": "Enter your name",
+    "placeholderEmail": "Enter your email",
+    "placeholderSubject": "Enter the subject",
+    "placeholderMessage": "Enter your message here...",
+    "errorName": "Name is required.",
+    "errorEmail": "Email is required.",
+    "errorEmailFormat": "Enter a valid email.",
+    "errorSubject": "Subject is required.",
+    "errorMessage": "Message is required.",
+    "successMessage": "Your message has been sent successfully!",
+    "errorMessageGeneral": "An error occurred while sending your message. Please try again."
+  },
+  "footer": {
+    "text1": "Email: jv.neto@outlook.com.br",
+    "text2": "Phone: +55 71 98449-8113",
+    "text3": "Salvador - Bahia, Brazil",
+    "text": "© 2024 Made by Vanderlei Neto. All rights reserved."
   }
 }
